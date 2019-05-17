@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" author="Matt Hans">
+    <title>HW Assignment: Open Weather API</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="intro">
+      <h1> Weather in United States</h1>
+      <p> By Matt Hans </p>
+    </div>
+    <p></p>
+
+    <div id="forms">
+      <h3> Search by zip code or City & State </h3>
+      <fieldset id="zip">
+        <legend>Zip Code</legend>
+          <label for="zipCpde"> Zip Code:</label>
+          <input type="text" name="zipCode" id="zipCode" maxlength="10" placeholder="xxxxx" />
+          <p></p>
+          <input type="submit" id="zipSubmit"/>
+          <p></p>
+      </fieldset>
+
+      <fieldset id="cityState">
+        <legend>City & State </legend>
+          <label for="cityName"> City Name: </label>
+          <input type="text" name="cityName" id="cityName" maxlength="40" placeholder="City"/>
+          <p></p>
+          <label for="stateName"> State Name: </label>
+          <input type="text" name="stateName" id="stateName" maxlength="40"/ placeholder="St"/>
+          <p></p>
+          <input type="submit" id="citySubmit"/>
+          <p></p>
+      </fieldset>
+
+    </div>
+    <p></p>
+    <div id="results">
+      <h3> Weather: </h3>
+      <table>
+        <thead>
+          <tr>
+          <th> City </th>
+          <th> Current Temperature </th>
+          <th> Percent Humidity </th>
+          </tr>
+        </thead>
+
+        <tbody id = "weatherData">
+
+        </tbody>
+      </table>
+      <p></p>
+    </div>
+
+    <p></p>
+
+    <div id="submitForm">
+      <form>
+        <p> Submit to HTTPBin </p>
+        <input type="text" name="data" id="data"/>
+        <input type="submit" id="httpbin" value="submit"/>
+        <p></p>
+      </form>
+      <p></p>
+      <h3> You sent the following data: </h3>
+      <textarea id="returnVal"> </textarea>
+      <p></p>
+    </div>
+    <p></p>
+
+
+
+    <script type="text/javascript" src="script.js"></script>
+
+
+</body>
+</html>
